@@ -1,0 +1,37 @@
+/* ======= Home Section ======= */
+.home.section {
+	position: absolute;
+	left: 5vw;
+	width: 95vw; 
+	height: 100vh;
+	transition: var(--main-transition);
+	display: none;
+}
+.section-home {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.home-banner {
+	text-align: center;
+	padding: 2rem;
+	color: var(--light-color);
+}
+.home-banner .title-wrapper {
+	font-size: 4rem;
+}
+.subtitle-wrapper {
+	font-size: 2rem;
+	text-align: center;
+	overflow: hidden;
+	transition: var(--main-transition);
+}
+.subtitle-text {
+	display: inline-block;
+	width: 50%;
+	text-align: left;
+	animation: change-text 4s ease-out infinite;
+}
+/* ============================ */

@@ -1,0 +1,24 @@
+@keyframes fade-in {
+	from {
+		transform: translateX(-4px);
+		opacity: 0;
+		pointer-events: none;
+	} to {
+		transform: translateX(4px);
+		opacity: 1;
+		pointer-events: all;
+	}
+}
+
+@keyframes change-text {
+	0% {
+		transform: translateY(2.6rem);
+		opacity: 0;
+	} 30%, 50%, 70% {
+		transform: translateY(0);
+		opacity: 1;
+	} 100% {
+		transform: translateY(0);
+		opacity: 0;
+	}
+}

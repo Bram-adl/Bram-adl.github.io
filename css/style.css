@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import './animate.css';
+@import './navbar.css';
+@import './home.css';
+@import './profile.css';
+@import './portfolio.css';
+@import './contact.css';
+
+/* ===== CSS Variables ===== */
+:root {
+	--prim-color: mediumseagreen;
+	--prim-color-alt: #DAF1DE;
+	--second-color: #FFE77A;
+	--second-color-alt: #235347;
+	--light-color: #FCF6F5BB;
+	--dark-color: #0a0a0a;
+	--main-padding: 4rem 2rem;
+	--btn-padding: .75rem 1.5rem;
+	--main-transition: .4s ease-out;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+/* ========================= */
+
+/* ==== General Styling ==== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), 
+	            url(../img/hero.jpg) center center/cover fixed no-repeat;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+p {
+	line-height: 1.5;
+}
+p.active {
+	color: var(--prim-color);
+}
+.section {
+	padding: var(--main-padding);
+	transition: var(--main-transition);
+}
+h1.title-wrapper {
+	font-size: 4rem;
+}
+h2.title-wrapper {
+	font-size: 3rem;
+	position: relative;
+	color: var(--light-color);
+	margin-bottom: 2rem;
+}
+
+.home.section.move-out,
+.portfolio.section.move-out,
+.contact.section.move-out,
+.profile.section.move-out {
+	left: 100vw;
+	opacity: 0;
+}
+.home.section.move-in,
+.portfolio.section.move-in,
+.contact.section.move-in,
+.profile.section.move-in {
+	left: 5vw;
+	opacity: 1;
+}
+
+li.active {
+	background: var(--prim-color);
+	color: var(--dark-color);
+}
+/* ========================= */

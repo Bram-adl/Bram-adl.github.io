@@ -1,0 +1,97 @@
+/* ======== Contact ======== */
+.contact.section {
+	position: absolute;
+	left: 5vw;
+	width: 95vw; 
+	height: 100vh;
+	overflow-y: auto;
+	transition: var(--main-transition);
+	/*opacity: 0;*/
+}
+.section-contact {
+	width: 100%;
+	height: auto;
+	padding: 1rem;
+	color: var(--light-color);
+}
+.contact-form,
+.contact-menu,
+.google-map {
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: .5rem;
+	padding: 1rem;
+	margin-bottom: 2rem;
+}
+.input-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2rem;
+	margin-bottom: 2rem;
+}
+.input-row input,
+.textarea-row textarea {
+	background: transparent;
+	border: 0;
+	outline: 0;
+	position: relative;
+	padding: .75rem .5rem;
+	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+	border-bottom: 1.5px solid var(--prim-color);
+	color: var(--prim-color);
+}
+.input-row input::placeholder,
+.textarea-row textarea::placeholder {
+	color: var(--prim-color);
+}
+.textarea-row textarea {
+	width: 100%;
+	height: 20vh;
+	resize: none;
+} 
+.submit-row {
+	margin-top: 2rem;
+	text-align: center;
+}
+.submit-row .submit-btn {
+	background: transparent;	
+	color: var(--light-color);
+	border: 0;
+	outline: 0;
+	border-bottom: 2px solid var(--prim-color);
+	font-size: 1.2rem;
+	cursor: pointer;
+	transition: var(--main-transition);
+}
+.submit-row .submit-btn:hover {
+	color: var(--prim-color);
+}
+.contact-menu {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+}
+.contact-menu .box {
+	text-align: center;
+	padding: 1rem;
+	min-width: 30%;
+}
+.contact-menu .box i {
+	font-size: 2rem;
+	color: var(--prim-color);
+}
+.contact-menu .box h4 {
+	font-size: 1rem;
+	margin: 1rem 0;
+}
+.contact-menu .box p {
+	color: grey;
+}
+.google-map {
+	margin-bottom: 0;
+}
+.google-map iframe {
+	width: 100%;
+	border-radius: 8px;
+}
+/* ========================= */
