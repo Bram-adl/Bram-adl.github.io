@@ -21,10 +21,10 @@
 				<i class="fas fa-bars hamburger"></i>
 			</div>
 			<ul class="navbar__menu">
-				<li><i class="fas fa-home"></i><span>Home</span></li>
-				<li><i class="fas fa-id-card"></i><span>Profile</span></li>
-				<li><i class="fas fa-suitcase"></i><span>Portfolio</span></li>
-				<li><i class="fas fa-address-book"></i><span>Contact</span></li>
+				<li class="active" data-section="home"><i class="fas fa-home"></i><span>Home</span></li>
+				<li data-section="profile"><i class="fas fa-id-card"></i><span>Profile</span></li>
+				<li data-section="portfolio"><i class="fas fa-suitcase"></i><span>Portfolio</span></li>
+				<li data-section="contact"><i class="fas fa-address-book"></i><span>Contact</span></li>
 			</ul>
 			<div class="navbar__setting">
 				<i class="fas fa-cog"></i>
@@ -34,7 +34,7 @@
 	<!-- End of Navigation -->
 
 	<!-- Home -->
-	<section id="home" class="home">
+	<section id="home" class="home active">
 		<div class="home__container">
 			<div class="home__banner__wrapper">
 				<h1 class="home__title">Raem Adean</h1>
@@ -48,5 +48,55 @@
 		</div>
 	</section>
 	<!-- End of Home -->
+
+
+	<!-- Portfolio -->
+	<section id="portfolio" class="portfolio">
+		<div class="portfolio__container">
+			<div class="portfolio__header">
+				<h2>Portfolio</h2>
+			</div>
+			<ul class="portfolio__tabs">
+				<li class="active" data-type="all">All</li>
+				<li data-type="webdesign">Web Designs</li>
+				<li data-type="webproject">Web Projects</li>
+			</ul>
+			<div class="portfolio__wrapper">
+				<div class="portfolio__box" data-type="webdesign">
+					<a href="./img/webdesign-1.png"><img src="img/webdesign-1.png"></a>
+					<p>Web Design</p>
+				</div>
+				<div class="portfolio__box" data-type="webdesign">
+					<a href="./img/webdesign-2.png"><img src="img/webdesign-2.png"></a>
+					<p>Web Design</p>
+				</div>
+				<div class="portfolio__box" data-type="webdesign">
+					<a href="./img/webdesign-3.png"><img src="img/webdesign-3.png"></a>
+					<p>Web Design</p>
+				</div>
+				<div class="portfolio__box" data-type="webdesign">
+					<a href="./img/webdesign-4.png"><img src="img/webdesign-4.png"></a>
+					<p>Web Design</p>
+				</div>
+				<div class="portfolio__box" data-type="webproject">
+					<a href="./img/webproject-1.png"><img src="img/webproject-1.png"></a>
+					<p>Web Project</p>
+				</div>
+				<div class="portfolio__box" data-type="webproject">
+					<a href="./img/webproject-2.png"><img src="img/webproject-2.png"></a>
+					<p>Web Project</p>
+				</div>
+				<div class="portfolio__box" data-type="webproject">
+					<a href="./img/webproject-3.png"><img src="img/webproject-3.png"></a>
+					<p>Web Project</p>
+				</div>
+				<div class="portfolio__box" data-type="webproject">
+					<a href="./img/webproject-4.png"><img src="img/webproject-4.png"></a>
+					<p>Web Project</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of Portfolio -->
 </body>
 </html>
