@@ -1,3 +1,5 @@
+@import './animation.css';
+
 /* ==== General Styling ==== */
 * {
 	margin: 0;
@@ -6,7 +8,7 @@
 }
 :root {
 	--prim-color: mediumseagreen;
-	--light-color: #fefefe;
+	--light-color: rgba(255, 255, 255, 0.8);
 	--full-width: 100%;
 }
 html, body {
@@ -20,84 +22,25 @@ a {
 	text-decoration: none;
 }
 h1 {
-	font-size: 3.6rem;
+	font-size: 3rem;
 }
 h2 {
-	font-size: 3.2rem;
+	font-size: 2.4rem;
 }
 h3 {
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 }
 h4 {
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 }
 p, span {
 	line-height: 1.5;
 }
-/* ========================= */
 
-/* ======== Navbar ========= */
-.navbar {
-	background: rgba(0, 0, 0, 0.75);
-	position: fixed;
-	width: 5%;
-	height: 100%;
-	box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
-	left: 0;
-	transition: .4s ease-out;
+.home__subtitle {
+	overflow: hidden;
 }
-.navbar.clicked {
-	width: 10%;
-}
-.navbar__container {
-	display: grid;
-	grid-template-rows: 10% 1fr 10%;
-	height: 100%;
-	color: var(--light-color);
-}
-.navbar__hamburger,
-.navbar__setting {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.navbar__hamburger i {
-	cursor: pointer;
-}
-.navbar__menu {
-	list-style: none;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
-}
-.navbar__menu li {
-	position: relative;
-	padding: .5rem;
-	cursor: pointer;
-}
-.navbar__menu li i {
-	transition: .4s ease-out;
-}
-.navbar.clicked .navbar__menu li i {
-	transform: translateX(-2rem);
-}
-.navbar__menu li span {
-	position: absolute;
-	left: 0;
-	opacity: 0;
-	pointer-events: none;
-	transform: translateX(-1rem);
-	transition: .4s ease-out;
-}
-.navbar.clicked .navbar__menu li span {
-	transform: translateX(0);
-	opacity: 1;
-	pointer-events: all;
+.home__subtitle #text {
+	animation: change-text 6s ease-out infinite;
 }
 /* ========================= */
-
-/* ========= Home ========= */
-
-/* ======================== */
-
