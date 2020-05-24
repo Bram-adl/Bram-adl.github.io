@@ -1,0 +1,84 @@
+/* ==== General Styling ==== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--prim-color: mediumseagreen;
+	--light-color: #fefefe;
+	--full-width: 100%;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg) center center/cover;
+}
+/* ========================= */
+
+/* ======== Navbar ========= */
+.navbar {
+	background: rgba(0, 0, 0, 0.75);
+	position: fixed;
+	width: 5%;
+	height: 100%;
+	box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+	left: 0;
+	transition: .4s ease-out;
+}
+.navbar.clicked {
+	width: 10%;
+}
+.navbar__container {
+	display: grid;
+	grid-template-rows: 10% 1fr 10%;
+	height: 100%;
+	color: var(--light-color);
+}
+.navbar__hamburger,
+.navbar__setting {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.navbar__hamburger i {
+	cursor: pointer;
+}
+.navbar__menu {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+.navbar__menu li {
+	position: relative;
+	padding: .5rem;
+	cursor: pointer;
+}
+.navbar__menu li i {
+	transition: .4s ease-out;
+}
+.navbar.clicked .navbar__menu li i {
+	transform: translateX(-2rem);
+}
+.navbar__menu li span {
+	position: absolute;
+	left: 0;
+	opacity: 0;
+	pointer-events: none;
+	transform: translateX(-1rem);
+	transition: .4s ease-out;
+}
+.navbar.clicked .navbar__menu li span {
+	transform: translateX(0);
+	opacity: 1;
+	pointer-events: all;
+}
+/* ========================= */
+
+
