@@ -24,10 +24,10 @@ function setSection() {
 	})
 
 	function moveSection(target, current) {
-		target.classList.add('move-in')
 		target.classList.remove('move-out')
-		current.classList.add('move-out')
+		target.classList.add('move-in')
 		current.classList.remove('move-in')
+		current.classList.add('move-out')
 	}
 }
 setSection()
